@@ -31,6 +31,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #333;
 }
 
 .header__top {
@@ -49,9 +50,6 @@ a {
 
 .logo {
   margin-right: 100px;
-}
-
-.header__form {
 }
 
 .header__form-input {
@@ -166,3 +164,130 @@ a {
   background-color: #627057;
 }
 
+.bread-crumbs {
+  padding-left: 55px;
+  padding-bottom: 20px;
+}
+
+.jumper__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jumper__inner-text {
+  width: 400px;
+  text-align: center;
+  height: auto;
+}
+
+.jumper__inner-title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.jumper__inner-cost {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.jumper__inner-cost--discount {
+  padding: 10px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  font-size: 20px;
+}
+
+.jumper__inner-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding: 20px 0; 
+}
+
+.jumper__inner-color {
+  position: relative;
+  padding-top: 40px;
+  color: black;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.jumper__inner-color:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  top: 0;
+  left: 2px;
+  border-radius: 50%;
+}
+
+.jumper__inner-color:nth-child(1)::before {
+  background-color: black;
+}
+.jumper__inner-color:nth-child(2)::before {
+  background-color: #c7c72a;
+}
+.jumper__inner-color:nth-child(3)::before {
+  background-color: #6e6e67;
+}
+.jumper__inner-color:nth-child(4)::before {
+  background-color: #0a51e9;
+}
+.jumper__inner-color:nth-child(5)::before {
+  background-color: #2ab5c7;
+}
+
+.jumper__inner-color:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.size-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.size-buttons__btn {
+  border: 1px solid #a59e9e;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  padding-top: 10px;
+  background-color: #cec6c6;
+  cursor: pointer;
+}
+
+.size-buttons__btn:hover {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #000000;
+}
+
+.size-buttons__btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.cart-button {
+  height: 45px;
+  width: 200px;
+  border: none;
+  padding: 5px 10px;
+  color: #fcfafa;
+  cursor: pointer;
+  background-color: #000000;
+  border: 1px solid transparent;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.cart-button:hover {
+  border: 1px solid #070707;
+  color: #000000;
+  background-color: #f8f8f8;
+  
+}
