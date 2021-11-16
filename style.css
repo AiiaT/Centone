@@ -90,9 +90,15 @@ a {
   margin-right: 20px;
 }
 
+.icon-nav__link {
+  display: inline-block;
+  transition: transform 1s;
+}
+
 .icon-nav__link:hover {
   text-decoration: underline;
-  color: #000;
+  color: #333;
+  transform:scale(1.1) 
 }
 
 .main-nav {
@@ -138,6 +144,14 @@ a {
 
 .products-section {
   padding-bottom: 50px;
+}
+
+img {
+  opacity: 0.8;
+}
+
+img:hover {
+  opacity: 1.0;
 }
 
 .products__item {
