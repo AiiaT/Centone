@@ -10,6 +10,7 @@ body {
 
 ul {
 	list-style: none;
+	padding-left: 0;
 }
 
 a {
@@ -144,6 +145,7 @@ a {
 	width: 1188px;
 	padding: 0 15px;
 	margin: 0 0 0 0;
+	margin: 0 auto;
 	display: grid;
 	justify-content: center;
 	grid-template-columns: repeat(3, 1fr);
@@ -337,6 +339,7 @@ a {
 .footer-top {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin-top: 30px;
@@ -350,6 +353,7 @@ a {
 	background-color: #333;
 	color: #fff;
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .footer-social {
@@ -565,6 +569,14 @@ a {
 		grid-template-rows: repeat(6, 1fr);
 		justify-content: flex-start;
 	}
+	.footer-top {
+		display: block;
+		text-align: center;
+	}
+	.footer-menu,
+	.footer-delivery {
+		margin-bottom: 30px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
@@ -626,16 +638,20 @@ a {
 }
 @media screen and (max-width: 900px) {
 	.jumper__inner {
-		flex-direction: column;
+		display: block;
+		text-align: center;
 	}
-	.jumper__inner-img {
+	/* .jumper__inner-img {
 		width: 400px;
-	}
+	} */
 	.jumper__inner-images {
 		margin-bottom: 20px;
 	}
 	.jumper__inner-img--left {
 		margin-bottom: 10px;
+	}
+	.jumper__inner-text {
+		margin: 0 auto;
 	}
 }
 @media screen and (max-width: 850px) {
@@ -727,6 +743,12 @@ a {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	.jumper__inner-img {
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 550px) {
 	.products__item {
 		width: 450px;
@@ -767,6 +789,17 @@ a {
 		grid-column: 1 / 2;
 		grid-row: 5 / 6;
 	}
+	.jumper__inner-text {
+		width: 100%;
+	}
+	.jumper__inner-wrapper,
+	.size-buttons {
+		flex-wrap: wrap;
+	}
+	.jumper__inner-color,
+	.size-buttons__btn {
+		margin-bottom: 10px;
+	}
 }
 
 @media screen and (max-width: 450px) {
@@ -791,11 +824,14 @@ a {
 }
 
 @media screen and (max-width: 460px) {
-	.main-nav__list {
+	.main-nav {
 		display: none;
 	}
 	.logo {
 		margin-right: 20px;
+	}
+	.header {
+		padding-bottom: 0;
 	}
 }
 
@@ -819,12 +855,6 @@ a {
 		grid-row: 5 / 6;
 	}
 	.footer-top {
-		line-height: 40px;
-		font-size: smaller;
-	}
-	.footer-menu__link,
-	.footer-delivery__link,
-	.footer-contact__address,
-	.footer-contact__email {
+		flex-wrap: wrap;
 	}
 }
